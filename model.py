@@ -37,9 +37,9 @@ class EMA():
         self.backup={}
         
 
-class GinAttnModel(nn.Module):
+class DinAttnModel(nn.Module):
     def __init__(self,dropout,in_dim,dim_emb_id,dim_lstm_hid,seq_len):
-        super(GinAttnModel,self).__init__()
+        super(DinAttnModel,self).__init__()
     
         self.emb_id=nn.Embedding(1605,dim_emb_id)
         self.mlp1=nn.Linear(in_dim,32,bias=False)
